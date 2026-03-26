@@ -1,0 +1,14 @@
+name = "cbse-math-qbank"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# KV namespace — create with: wrangler kv:namespace create "QBANK"
+# Then paste the id here
+[[kv_namespaces]]
+binding = "QBANK"
+id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+
+# Optional: custom domain
+# [routes]
+# pattern = "api.yourdomain.com/*"
+# zone_name = "yourdomain.com"
