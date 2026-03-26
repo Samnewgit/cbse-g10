@@ -553,7 +553,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Load chapter index
   try {
     const data = await apiFetch("/chapters");
-    state.chapters = data.chapters || [];
+    state.chapters = (data.chapters || [])
+      .filter(ch => ch.id !== "0") // remove unclassified
+      .sort((a, b) => Number(a.id) - Number(b.id));
     renderSidebar();
     renderHome();
     const total = state.chapters.reduce((s, c) => s + c.total, 0);
