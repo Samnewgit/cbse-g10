@@ -2,6 +2,10 @@ name = "cbse-g10"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
+kv_namespaces = [
+  { binding = "QBANK", id = "QBANK" }
+]
+
 # KV namespace — create with: wrangler kv:namespace create "QBANK"
 # Then paste the id here
 # Optional: custom domain
