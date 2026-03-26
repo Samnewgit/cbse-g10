@@ -11,7 +11,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const INPUT = "./master.db.json";
+const INPUT = "./master_db.json";
 const OUT_DIR = "./dist/api";
 
 // Fields to STRIP before any slice is written (never expose to browser)
