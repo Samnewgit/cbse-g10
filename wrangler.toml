@@ -3,7 +3,7 @@ main = "worker.js"
 compatibility_date = "2024-01-01"
 
 kv_namespaces = [
-  { binding = "QBANK", id = "QBANK" }
+  { binding = "QBANK", id = "1bb275e528784864b8ab96ba72ffc15f" }
 ]
 
 # KV namespace — create with: wrangler kv:namespace create "QBANK"
